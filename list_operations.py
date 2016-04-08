@@ -126,7 +126,7 @@ def inner_four(input_list):
     [6, 9, 12, 15]
 
     """
-    return input_list[3:7]
+    return input_list[2:6]
 
 
 def inner_four_end(input_list):
@@ -190,9 +190,9 @@ def replace_middle(input_list):
     >>> multiples == [0, 3, 42, 37, 24, 27]
     True
 
-    """
-    input_list[2:-2:2]=42
-    input_list[3:-3:2]=37
+    """ 
+    input_list[2:-3]=[42]
+    input_list[-3]=37
     return None
 
 
@@ -209,8 +209,9 @@ def delete_third_and_seventh(input_list):
     True
 
     """
-
-    pass
+    del input_list[6]
+    del input_list[2] # operates on new versio so di [2], [5]
+    return None
 
 
 def delete_middle(input_list):
@@ -227,7 +228,8 @@ def delete_middle(input_list):
 
     """
 
-    pass
+    del input_list[2:-2]
+    return None
 
 
 ##############################################################################
