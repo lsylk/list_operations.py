@@ -56,7 +56,7 @@ def last(input_list):
     'Mar'
 
     """
-    return input_list[-1]
+    return input_list[-1] # -1 is always the last number 
 
 
 def init(input_list):
@@ -140,8 +140,7 @@ def inner_four_end(input_list):
     [12, 15, 18, 21]
 
     """
-    return input_list[-6:-2:1]
-
+    return input_list[-6:-2:1] # it starts reading from left to right and it starts from the lowest and stops to the highest. If the 3rd digit (steps) is negative means go backwards. 
 
 def replace_head(input_list):
     """
@@ -156,7 +155,7 @@ def replace_head(input_list):
     True
 
     """
-    input_list[0]=42
+    input_list[0]=42 # list indexing assigment: assigning a value to a specific index. One index can only assign one value.
     return None
 
 
@@ -191,7 +190,7 @@ def replace_middle(input_list):
     True
 
     """ 
-    input_list[2:-3]=[42]
+    input_list[2:-3]=[42] #list slicing assigment can only assign a new list. 
     input_list[-3]=37
     return None
 
@@ -210,7 +209,11 @@ def delete_third_and_seventh(input_list):
 
     """
     del input_list[6]
-    del input_list[2] # operates on new versio so di [2], [5]
+    del input_list[2] 
+    # if use 
+    # del input_list[2] creates a new version of the list 
+    # the indexes are rearranged again, so need to count them again. 
+    # del input_list[5]
     return None
 
 
